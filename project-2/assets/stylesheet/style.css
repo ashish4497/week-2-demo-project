@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+*::after, ::before, * {
+  box-sizing: border-box;
+}
+
+.clearfix::after, .clearfix::before {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.padding {
+  padding: 84px 0;
+}
+
+ /* generic class  */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn   {
+  padding: 18px 26px;
+  border: 2px solid #6bc091;
+  background: transparent;
+  color: #6bc091;
+  text-transform: uppercase;
+  border-radius: 25px;
+  outline: none;
+}
+
+
+ /* header  */
+.header {
+  background: rgba(206, 245, 208, 0.85);
+  background-image: url("https://i.pinimg.com/originals/9c/37/de/9c37de51c6b44dc2b97bbe1cfe199b55.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  text-transform: capitalize;
+}
+
+.logo a {
+  color: white;
+  font-size: 22px;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-left: 8px;
+  color: white;
+}
+
+.hero-seaction {
+  text-align: center;
+}
+
+.hero-heading {
+  text-transform: capitalize;
+  font-size: 64px;
+  color: white;
+  font-family: 'Kalam', cursive;
+}
+
+
+/* icons  */
+.detail-icons {
+  margin-top: 22px;
+  padding:20px;
+}
+
+.detail-icons h3 {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: white;
+  font-family: 'Kalam', cursive;
+}
+
+.detail-icons p {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: white;
+}
+
+.fas {
+  color:#6bc091;
+  font-size: 42px;
+}
+
+.row-0 {
+  display: inline-block;
+}
+
+.row-1 {
+  display: inline-block;
+}
+
+.row-2 {
+  display: inline-block;
+}
+
+
+/* section-1  */
+.sec-2 {
+  display: flex;
+  justify-content:space-between;
+  text-align: center;
+  padding:70px;
+}
+
+.user-icon {
+  height:200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sec-2-heading {
+  font-size: 24px;
+  color: #272733;
+  font-family: 'Kalam', cursive;
+}
+
+.sec-2-para {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #b39da0;
+}
+
+.col-1-row-1 {
+  width: 45%;
+}
+
+.col-1-row-2 {
+  width: 45%;
+}
+
+
+/* section-3  */
+.sec-3 {
+  background-color: teal;
+  text-align: justify;
+}
+
+.intro-sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-sec .sec-2-para {
+  color: white;
+}
+
+.content-space {
+  padding: 10px 30px;
+}
+
+
+/* section-4  */
+.col-4-row-1{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+.viewimage {
+  width: 100%;
+}
+
+.right-col {
+  width: 50%;
+  padding: 10px 0 0 50px;
+  text-align: left;
+}
+
+.no-space {
+  padding-left: 0;
+  padding-right: 50px;
+}
+
+.left-col {
+  width: 50%;
+}
+
+.col-4-heading {
+  font-size: 22px;
+  font-family: 'Kalam', cursive;
+}
+
+/* footer  */
+.footer {
+  background-color: teal;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form {
+  width: 30%;
+}
+
+.form-headiing {
+  text-transform: capitalize;
+  font-size: 32px;
+  color: white;
+  font-family: 'Kalam', cursive;
+}
+
+input {
+  background: transparent;
+  border: 1px solid #8dcca9;
+  height: 50px;
+  outline: none;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+textarea {
+  background: transparent;
+  border: 1px solid #8dcca9;
+  outline: none;
+  display: block;
+  text-transform: capitalize;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+::placeholder {
+  text-transform: capitalize;
+  color: white;
+  font-size: 12px;
+}
+
+.submit-btn {
+  padding:20px 30px;
+  background: transparent;
+  border-radius: 30px;
+  border: 3px solid #8dcca9;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 30px;
+  outline: none;
+}
+
+.social-links {
+  text-align: center;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.fab {
+  font-size: 32px;
+  margin: 16px 0;
+  color: white;
+}
+
+.address-sec {
+  width: 30%;
+}
+
+.address-sec  p {
+text-transform: capitalize;
+color: white;
+font-size: 18px;
+}
+
+.copy-right {
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  display: block;
+  padding-bottom: 30px;
+}
